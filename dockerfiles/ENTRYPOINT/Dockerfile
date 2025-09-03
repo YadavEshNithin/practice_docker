@@ -1,2 +1,3 @@
 FROM almalinux
-ENTRYPOINT ["sleep", "20"]
+ENTRYPOINT ["echo"]
+CMD ["hello_from_CMD"]
