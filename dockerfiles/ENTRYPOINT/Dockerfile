@@ -1,2 +1,2 @@
 FROM almalinux
-ENTRYPOINT ["echo", "hello world from ENTRYPOINT"]
+ENTRYPOINT ["sleep", "50"]
