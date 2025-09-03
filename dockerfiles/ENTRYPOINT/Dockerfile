@@ -1,2 +1,2 @@
 FROM almalinux
-ENTRYPOINT ["sleep", "60"]
+ENTRYPOINT ["sleep", "20"]
