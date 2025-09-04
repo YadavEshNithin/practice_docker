@@ -5,8 +5,8 @@ COPY package.json .
 COPY *.js .
 RUN npm install
 RUN chown -R roboshop:roboshop /opt/server
-USER roboshop
 ENV MONGO='true' \
     REDIS_URL='redis://redis:6379'
     MONGO_URL="mongodb://mongodb:27017/users"
+USER roboshop
 CMD ["node", "server.js"]
