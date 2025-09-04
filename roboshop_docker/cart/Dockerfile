@@ -4,7 +4,7 @@ WORKDIR /opt/server
 ENV REDIS_HOST="redis" \
     CATALOGUE_HOST="catalogue" \
     CATALOGUE_PORT="8080"
-COPY package.json
-COPY *.js 
+COPY package.json .
+COPY *.js .
 RUN npm install
 CMD ["node", "server.js"]
