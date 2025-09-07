@@ -38,7 +38,7 @@ spec:
     env: dev
     purpose: Deployment-demo
   ports: 
-    protocol: TCP
+  - protocol: TCP
     port: 80
     nginx: 80
 
