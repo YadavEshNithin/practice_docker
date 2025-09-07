@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: annotations
   labels:
-  - project: roboshop
+    project: roboshop
     purpose: labels_demo
   annotations:
     description: "this is a annotations demo"
