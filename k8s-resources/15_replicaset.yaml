@@ -5,8 +5,9 @@ metadata:
   labels:
     purpose: rs-demo-purpose
 spec:
+  replicas: 2
   selector:
-    matchlabels:
+    matchlabel:
       project: roboshop
       env: dev
       purpose: rs-demo
