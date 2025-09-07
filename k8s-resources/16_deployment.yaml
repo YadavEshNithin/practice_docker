@@ -37,6 +37,9 @@ spec:
     project: roboshop
     env: dev
     purpose: Deployment-demo
-
+  ports: 
+    protocol: TCP
+    port: 80
+    nginx: 80
 
     
