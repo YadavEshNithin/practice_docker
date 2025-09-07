@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod_env
+  labels: 
+    purpose: pod_env demo 
+    project: roboshop
+spec: 
+  containers:
+    - name: nginx
+      image: nginx
+      env: 
+      - name: COURSE
+        value: devsecops
+      - name: TRAINER
+        value: siva sir
