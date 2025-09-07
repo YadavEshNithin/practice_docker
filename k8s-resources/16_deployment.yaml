@@ -40,6 +40,6 @@ spec:
   ports: 
   - protocol: TCP
     port: 80
-    nginx: 80
+    targetPort: 80
 
     
