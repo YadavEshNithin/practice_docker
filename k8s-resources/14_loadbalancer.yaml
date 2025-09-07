@@ -25,7 +25,7 @@ metadata:
   labels:
     project: roboshop
     env: dev
-    # purpose: loadbalancer-demo
+    purpose: loadbalancer-demo
 spec:
   containers:
     - name: nginx
