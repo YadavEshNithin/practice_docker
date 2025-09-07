@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-demo
+  labels:
+    purpose: rs-demo-purpose
+spec:
+  selector:
+    matchlabels:
+      project: roboshop
+      env: dev
+      purpose: rs-demo
+  template:
+    metadata:
+      name: rs-demo-pod
+      labels:
+        project: roboshop
+        env: dev
+        purpose: rs-demo
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
