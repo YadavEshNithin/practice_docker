@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: labels
+  labels:
+  - project: roboshop
+    purpose: labels_demo
+  annotations:
+    description: "this is a annotations demo"
+    jenkins: "here will be jenkins link just for demo"
+spec: 
+  containers:
+    - name: nginx
+      image: nginx 
