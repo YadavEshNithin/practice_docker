@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: pod-env
   labels: 
-    purpose: pod-env demo 
+    purpose: pod_env_demo 
     project: roboshop
 spec: 
   containers:
