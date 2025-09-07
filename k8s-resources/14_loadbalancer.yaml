@@ -11,7 +11,7 @@ spec:
     env: dev
     purpose: loadbalancer-demo
   ports:
-    protocol: TCP
+  - protocol: TCP
     port: 80
     targetPort: 80
 
