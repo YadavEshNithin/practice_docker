@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: pod_env
+  name: pod-env
   labels: 
-    purpose: pod_env demo 
+    purpose: pod-env demo 
     project: roboshop
 spec: 
   containers:
