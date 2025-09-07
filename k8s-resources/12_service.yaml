@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pod-service
+  labels:
+    project: roboshop
+    purpose: Service_demo
+spec:
+  selectors:
+    project: roboshop
+    env: dev
+    purpose: Service_demo
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-service-one
+  labels: 
+    project: roboshop
+    env: dev
+    purpose: Service_demo
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-service-two
+  labels: 
+    project: roboshop
+    env: dev
+    purpose: Service_demo
+spec:
+  containers:
+    - name: nginx
+      image: nginx
