@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: Pod 
 metadata:
-  name: node_affinity
+  name: node-affinity
   purpose: node_affinity_hardrule
 spec:
   affinity: 
