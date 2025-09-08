@@ -68,5 +68,5 @@ spec:
       storageClassName: "efs-sc"
       accessModes: ["ReadWriteOnce"]
       resources:
-        request:
+        requests:
           - storage: 1Gi
