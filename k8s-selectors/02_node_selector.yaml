@@ -12,7 +12,7 @@ spec:
   nodeSelector:
     disktype: ssd
   tolerations:
-    - key: key1
-      value: value1
-      operator: Equal
-      effect: NoExecute
+    - key: "key1"
+      value: "value1"
+      operator: "Equal"
+      effect: "NoExecute"
