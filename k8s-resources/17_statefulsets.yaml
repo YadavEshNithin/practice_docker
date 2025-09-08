@@ -62,7 +62,7 @@ spec:
           - name: "statefulset-volume"
             mountPath: /usr/share/nginx/html
   volumeClaimTemplates: 
-    metadata:
+  - metadata:
       name: "statefulset-volume"        
     spec:
       storageClassName: "efs-sc"
