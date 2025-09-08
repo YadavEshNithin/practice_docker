@@ -1,0 +1,13 @@
+apiVersion: v1 
+kind: Pod 
+metadata:
+  name: nginx-pod
+  labels:
+    purpose: node_selector_label
+spec:
+  containers:
+    - name: nginx 
+      image: nginx 
+      imagePullPolicy: Always
+  nodeSelector:
+    disktype: ssd
