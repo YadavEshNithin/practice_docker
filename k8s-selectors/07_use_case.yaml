@@ -64,3 +64,20 @@ spec:
       containers:
       - name: web-app
         image: nginx:1.16-alpine
+
+---
+
+apiVersion: v1 
+kind: Service
+metadata:
+  name: service 
+  labels:
+    purpose: service-demo 
+spec:
+  type: LoadBalancer
+  selector:
+    app: web-store
+  ports: 
+    - protocol: TCP 
+      port: 80
+      targetPort: 80
