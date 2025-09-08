@@ -21,14 +21,14 @@ metadata:
     purpose: pod-affinity
 spec:
   affinity: 
-    nodeAffinity: 
+    podAffinity: 
       requiredDuringSchedulingIgnoredDuringExecution:
-      - labelSelector:
-          matchExpressions:
-            - key: app-name
-              operator: In
-              values:
-              - pod-1
+        - labelSelector:
+            matchExpressions:
+              - key: app-name
+                operator: In
+                values:
+                - pod-1
   containers:
     - name: nginx 
       image: nginx 
