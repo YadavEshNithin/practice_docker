@@ -23,8 +23,8 @@ spec:
   affinity: 
     nodeAffinity: 
       requiredDuringSchedulingIgnoredDuringExecution:
-        labelSelector:
-          - matchExpressions:
+      - labelSelector:
+          matchExpressions:
             - key: app-name
               operator: In
               values:
