@@ -5,6 +5,7 @@ metadata:
   labels:
     purpose: service-helm-demo
 spec:
+  type: LoadBalancer
   selector:
     project: roboshop
     purpose: helm 
