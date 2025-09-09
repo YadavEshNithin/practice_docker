@@ -1,0 +1,5 @@
+apiVersion: v2 
+name: sample-chart
+version: 1.0.0
+description: sample-chart-demo
+appVersion: v1 

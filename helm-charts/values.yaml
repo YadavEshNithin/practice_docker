@@ -1,0 +1,5 @@
+deployment:
+  replicas: 2
+  imagename: nginx 
+service: 
+  targetPort: 80

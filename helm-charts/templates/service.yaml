@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service
+metadata:
+  name: service-helm
+  labels:
+    purpose: service-helm-demo
+spec:
+  selector:
+    project: roboshop
+    purpose: helm 
+  ports: 
+  - protocol: TCP 
+    port: 80
+    targetPort: {{ .Values.service.targetPort }}
